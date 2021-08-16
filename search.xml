@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>参数注入类型</title>
+    <url>/archives/f693cfae.html</url>
+    <content><![CDATA[<html><head></head><body><p>计划中，马上写</p>
+</body></html>]]></content>
+      <categories>
+        <category>future</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>SQL注入原理</title>
+    <url>/archives/4e8d771.html</url>
+    <content><![CDATA[<html><head></head><body><p>当 Web 应用向后台数据库传递 SQL 语句进行数据库操作时。如果对用户输入的参数没有经过严格的过滤处理，那么攻击者就可以构造特殊的 SQL 语句，直接输入数据库引擎执行，获取或修改数据库中的数据。SQL 注入的本质就是将数据当作代码执行。</p>
+<span id="more"></span>
+
+<h2 id="SQL-注入的两个条件"><a href="#SQL-注入的两个条件" class="headerlink" title="SQL 注入的两个条件"></a>SQL 注入的两个条件</h2><pre><code>1. 用户能控制输入的内容
+2. 输入的内容能被带到数据库中执行
+</code></pre>
+<h2 id="SQL-注入的危害"><a href="#SQL-注入的危害" class="headerlink" title="SQL 注入的危害"></a>SQL 注入的危害</h2><pre><code>1. 绕过验证登陆
+2. 盗取敏感信息
+3. 借助 SQL 注入漏洞提权
+</code></pre>
+<h2 id="SQL-注入的基本流程"><a href="#SQL-注入的基本流程" class="headerlink" title="SQL 注入的基本流程"></a>SQL 注入的基本流程</h2><h3 id="1-信息收集"><a href="#1-信息收集" class="headerlink" title="1. 信息收集"></a>1. 信息收集</h3><pre><code>* 数据库的类型以及版本
+* 当前用户
+* 判断数据库权限
+</code></pre>
+<h3 id="2-数据获取"><a href="#2-数据获取" class="headerlink" title="2. 数据获取"></a>2. 数据获取</h3><pre><code>1) 获取数据库信息
+2) 获取表信息
+3) 获取列信息
+4) 获取数据
+</code></pre>
+<h3 id="3-提权"><a href="#3-提权" class="headerlink" title="3. 提权"></a>3. 提权</h3><pre><code>根据数据库权限提权
+1) 直接执行系统命令直接提权
+2) 读数据库配置文件，尝试远程连接；读系统配置文件，收集信息
+3) 写 webshell 到网站目录
+</code></pre>
+</body></html>]]></content>
+      <categories>
+        <category>Web 安全</category>
+      </categories>
+      <tags>
+        <tag>SQL注入</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>盲注类型</title>
+    <url>/archives/84e89942.html</url>
+    <content><![CDATA[<html><head></head><body><p>计划中，马上写</p>
+</body></html>]]></content>
+      <categories>
+        <category>future</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Linux文件权限管理</title>
     <url>/archives/ad5612ad.html</url>
     <content><![CDATA[<html><head></head><body><h2 id="普通权限"><a href="#普通权限" class="headerlink" title="普通权限"></a>普通权限</h2><p>在 Linux 中使用 <code>ls -l</code> 命令可以查看一个文件的属性以及所属的用户和组：</p>
